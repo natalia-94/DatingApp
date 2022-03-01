@@ -4,20 +4,21 @@ import { CommonModule } from '@angular/common';
 //Modules
 import { FormsModule } from "@angular/forms";
 
-import { NavComponent } from '../shared/nav/nav.component';
+// import { NavComponent } from '../shared/nav/nav.component';
 
 
 
 @NgModule({
   declarations: [
-    NavComponent
+    //NavComponent
   ],
   imports: [
     CommonModule,
     FormsModule
   ],
   exports: [
-    NavComponent
+    FormsModule
+    //NavComponent
   ]
 })
 export class SharedModule { }

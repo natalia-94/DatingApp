@@ -5,16 +5,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 //Personalized modules
+import { FormsModule } from "@angular/forms";
 import { SharedModule } from "./shared/shared.module";
+import { UsersModule } from "./Users/users.module";
 
 //ngx bootstrap modules
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AppComponent } from './app.component';
+import { NavComponent } from "./shared/nav/nav.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,9 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
-    SharedModule
+    FormsModule,
+    SharedModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
