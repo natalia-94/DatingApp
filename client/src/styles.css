@@ -9,6 +9,10 @@
     cursor: pointer;
 }
 
+.dropdown-toggle {
+    text-decoration: none;
+}
+
 .dropdown-toggle:hover {
     text-decoration: none;
 }

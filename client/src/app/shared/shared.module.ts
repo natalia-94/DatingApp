@@ -6,6 +6,10 @@ import { FormsModule } from "@angular/forms";
 
 // import { NavComponent } from '../shared/nav/nav.component';
 
+//ngx bootstrap modules
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 @NgModule({
@@ -14,10 +18,16 @@ import { FormsModule } from "@angular/forms";
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    BsDropdownModule.forRoot(),
+    ToastrModule.forRoot({
+      positionClass:'toast-bottom-right'
+    })
   ],
   exports: [
-    FormsModule
+    FormsModule,
+    BsDropdownModule,
+    ToastrModule
     //NavComponent
   ]
 })
