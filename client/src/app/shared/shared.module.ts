@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 //Modules
 import { FormsModule } from "@angular/forms";
@@ -10,15 +11,22 @@ import { FormsModule } from "@angular/forms";
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ToastrModule } from 'ngx-toastr';
 
+//components
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ServerErrorComponent } from './server-error/server-error.component';
+
 
 
 @NgModule({
   declarations: [
-    //NavComponent
+    //NavComponent  
+    NotFoundComponent,
+    ServerErrorComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     BsDropdownModule.forRoot(),
     ToastrModule.forRoot({
       positionClass:'toast-bottom-right'

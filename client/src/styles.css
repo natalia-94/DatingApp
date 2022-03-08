@@ -26,3 +26,10 @@
 .welcome-title-container {
     text-align: center;
 }
+
+
+/* ERRORS */
+
+.code-text {
+    background-color: whitesmoke;
+}
