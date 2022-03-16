@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './Users/pages/home/home.component';
-import { MemberListComponent } from './members/member-list/member-list.component';
-import { MemberDetailComponent } from './members/member-detail/member-detail.component';
+import { MemberListComponent } from './members/pages/member-list/member-list.component';
+import { MemberDetailComponent } from './members/pages/member-detail/member-detail.component';
 import { ListComponent } from './list/list.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AuthGuard } from './guards/auth.guard';
@@ -26,7 +26,7 @@ const routes: Routes = [
         canActivate:[AuthGuard]
       },
       {
-        path:'members/:id',
+        path:'members/:username',
         component: MemberDetailComponent
       },
       {

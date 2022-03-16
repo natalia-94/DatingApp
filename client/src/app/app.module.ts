@@ -8,26 +8,25 @@ import { FormsModule } from "@angular/forms";
 //Personalized modules
 import { SharedModule } from "./shared/shared.module";
 import { UsersModule } from "./Users/users.module";
+import { MembersModule } from './members/members.module';
 
 //Components
 import { AppComponent } from './app.component';
 import { NavComponent } from "./shared/nav/nav.component";
-import { MemberListComponent } from './members/member-list/member-list.component';
-import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { ListComponent } from './list/list.component';
 import { MessagesComponent } from './messages/messages.component';
 import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
 import { ErrorInterceptor } from './interceptors/error.interceptor';
+import { JwtInterceptor } from './interceptors/jwt.interceptor';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    MemberListComponent,
-    MemberDetailComponent,
     ListComponent,
     MessagesComponent,
-    TestErrorsComponent
+    TestErrorsComponent    
   ],
   imports: [
     BrowserModule,
@@ -36,12 +35,13 @@ import { ErrorInterceptor } from './interceptors/error.interceptor';
     BrowserAnimationsModule,
     FormsModule,    
     SharedModule,
-    UsersModule
+    UsersModule,
+    MembersModule
   ],
   providers: [
-    {
-      provide: HTTP_INTERCEPTORS,useClass: ErrorInterceptor,multi:true
-    }
+    {provide: HTTP_INTERCEPTORS,useClass: ErrorInterceptor,multi:true},
+    {provide: HTTP_INTERCEPTORS,useClass: JwtInterceptor,multi:true}
+    
   ],
   bootstrap: [AppComponent]
 })
