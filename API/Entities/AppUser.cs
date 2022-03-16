@@ -27,7 +27,7 @@ namespace API.Entities
 
         public string LookingFor { get; set; }
 
-        public string Interest { get; set; }
+        public string Interests { get; set; }
 
         public string City { get; set; }
 

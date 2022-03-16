@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from "@angular/forms";
 
 //Modules
 import { SharedModule } from '../shared/shared.module';
@@ -8,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { MemberDetailComponent } from './pages/member-detail/member-detail.component';
 import { MemberCardComponent } from './components/member-card/member-card.component';
 import { MemberListComponent } from './pages/member-list/member-list.component';
+import { MemberEditComponent } from './pages/member-edit/member-edit.component';
 
 
 
@@ -15,11 +17,13 @@ import { MemberListComponent } from './pages/member-list/member-list.component';
   declarations: [
     MemberListComponent,
     MemberDetailComponent,
-    MemberCardComponent
+    MemberCardComponent,
+    MemberEditComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
     SharedModule
   ],
   exports:[
