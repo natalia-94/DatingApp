@@ -13,6 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { FileUploadModule } from "ng2-file-upload";
 
 //components
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -34,14 +35,16 @@ import { ServerErrorComponent } from './server-error/server-error.component';
     }),
     TabsModule.forRoot(),
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FileUploadModule
   ],
   exports: [
     BsDropdownModule,
     ToastrModule,
     TabsModule,
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FileUploadModule
     //NavComponent
   ]
 })
