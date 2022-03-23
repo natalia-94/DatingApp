@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 //Modules
 import { FormsModule } from "@angular/forms";
+import { SharedModule } from "../shared/shared.module";
 
 //Components
 import { HomeComponent } from './pages/home/home.component';
-import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
+import { SignUpFormComponent } from './pages/sign-up-form/sign-up-form.component';
 
 
 
@@ -17,7 +18,8 @@ import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.comp
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   exports:[
     HomeComponent
