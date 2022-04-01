@@ -1,0 +1,26 @@
+table {
+    cursor: pointer;
+}
+
+button.btn-danger {
+    background-color: #df382c;
+    border-color: #df382c;
+}
+
+button.btn-danger:hover {
+    color: #fff;
+    background-color: #be3025;
+    border-color: #b22d23;
+}
+
+.img-circle {
+    max-height: 50px;
+}
+
+.header-width-40 {
+    width: 40%;
+}
+
+.header-width-20 {
+    width: 20%;
+}

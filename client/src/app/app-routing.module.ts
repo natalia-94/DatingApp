@@ -4,13 +4,14 @@ import { HomeComponent } from './Users/pages/home/home.component';
 import { MemberListComponent } from './members/pages/member-list/member-list.component';
 import { MemberDetailComponent } from './members/pages/member-detail/member-detail.component';
 import { ListComponent } from './list/list.component';
-import { MessagesComponent } from './messages/messages.component';
+import { MessagesComponent } from './messages/components/messages.component';
 import { AuthGuard } from './guards/auth.guard';
 import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { ServerErrorComponent } from './shared/server-error/server-error.component';
 import { MemberEditComponent } from './members/pages/member-edit/member-edit.component';
 import { PreventUnsavedChangesGuard } from './guards/prevent-unsaved-changes.guard';
+import { MemberDetailedResolver } from './_resolvers/member-detailed.resolver';
 
 const routes: Routes = [
   {
@@ -28,7 +29,8 @@ const routes: Routes = [
       },
       {
         path:'members/:username',
-        component: MemberDetailComponent
+        component: MemberDetailComponent,
+        resolve: {member: MemberDetailedResolver}
       },
       {
         path:'member/edit',

@@ -11,6 +11,7 @@ import { MemberCardComponent } from './components/member-card/member-card.compon
 import { MemberListComponent } from './pages/member-list/member-list.component';
 import { MemberEditComponent } from './pages/member-edit/member-edit.component';
 import { PhotoEditorComponent } from './photos/components/photo-editor/photo-editor.component';
+import { MemberMessagesComponent } from './components/member-messages/member-messages.component';
 
 
 
@@ -20,7 +21,8 @@ import { PhotoEditorComponent } from './photos/components/photo-editor/photo-edi
     MemberDetailComponent,
     MemberCardComponent,
     MemberEditComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    MemberMessagesComponent
   ],
   imports: [
     CommonModule,

@@ -14,7 +14,7 @@ import { MembersModule } from './members/members.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from "./shared/nav/nav.component";
 import { ListComponent } from './list/list.component';
-import { MessagesComponent } from './messages/messages.component';
+import { MessagesComponent } from './messages/components/messages.component';
 import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
 import { ErrorInterceptor } from './interceptors/error.interceptor';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
