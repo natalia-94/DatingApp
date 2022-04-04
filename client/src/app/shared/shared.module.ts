@@ -18,6 +18,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimeagoModule } from 'ngx-timeago';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 //components
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -50,7 +51,8 @@ import { DateInputComponent } from './forms/date-input/date-input.component';
     NgxGalleryModule,
     NgxSpinnerModule,
     FileUploadModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule.forRoot()
   ],
   exports: [
     BsDropdownModule,
@@ -65,7 +67,8 @@ import { DateInputComponent } from './forms/date-input/date-input.component';
     DateInputComponent,
     PaginationModule,
     ButtonsModule,
-    TimeagoModule
+    TimeagoModule,
+    ModalModule
     //NavComponent
   ]
 })
