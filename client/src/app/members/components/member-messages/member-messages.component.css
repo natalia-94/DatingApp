@@ -17,3 +17,8 @@
 .rounded-circle {
     max-height: 50px;
 }
+
+.messages-scroll {
+    overflow: scroll;
+    height: 500px;
+}
