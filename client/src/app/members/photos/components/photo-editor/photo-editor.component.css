@@ -4,6 +4,22 @@ img.img-thumbnail {
     margin-bottom: 2px;
 }
 
+.img-unapproved {
+    opacity: 0.2;
+}
+
+.img-container {
+    position: relative;
+}
+
+.red-text {
+    color: rgb(223, 6, 6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .nv-file-over {
     border: dotted 3px blue;
 }
