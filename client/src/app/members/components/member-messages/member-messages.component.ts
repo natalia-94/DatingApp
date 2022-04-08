@@ -18,6 +18,7 @@ export class MemberMessagesComponent implements OnInit {
   @Input() username: string;
   messageContent: string;
   user: User;
+  loading = false;
 
   constructor(private accountService: AccountService, public messageService: MessageService) { 
       this.accountService.currentUserSource$.pipe(take(1)).subscribe(user => 
@@ -29,9 +30,11 @@ export class MemberMessagesComponent implements OnInit {
   }
 
   sendMessage(){
+    this.loading = true;
     this.messageService.sendMessage(this.username, this.messageContent).then(() => {
-      this.messageForm.reset();
-    });
+      this.messageForm.reset();      
+    })
+    .finally(() => this.loading = false);
   }
 
  
