@@ -1,12 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Helpers
-{
-    public class PagedList<T>: List<T>
+﻿namespace API.Helpers;
+public class PagedList<T>: List<T>
     {
         public PagedList(IEnumerable<T> items, int count, int pageNumber, int pageSize)
         {
@@ -29,4 +22,3 @@ namespace API.Helpers
             return new PagedList<T>(items,count,pageNumber,pageSize);
         }
     }
-}

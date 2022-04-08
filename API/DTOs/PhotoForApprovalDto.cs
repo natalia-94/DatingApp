@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.DTOs
-{
-    public class PhotoForApprovalDto
+﻿namespace API.DTOs;
+public class PhotoForApprovalDto
     {
         //Photo Id, the Url, the Username and the isApproved
         public int Id { get; set; }
@@ -13,4 +7,3 @@ namespace API.DTOs
         public string Username { get; set; }
         public bool IsApproved { get; set; }
     }
-}

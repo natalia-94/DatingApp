@@ -1,15 +1,5 @@
-﻿using API.Data;
-using API.Entities;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Controllers
-{
-    public class BuggyController : BaseApiController
+﻿namespace API.Controllers;
+public class BuggyController : BaseApiController
     {
         private readonly DataContext _context;
 
@@ -47,4 +37,3 @@ namespace API.Controllers
             return BadRequest("This was not a good request");
         }
     }
-}

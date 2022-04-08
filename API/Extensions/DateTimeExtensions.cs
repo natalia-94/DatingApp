@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 
-namespace API.Extensions
-{
+namespace API.Extensions;
     public static class DateTimeExtensions
     {
         public static int CalculateAge(this DateTime dob)
@@ -18,4 +14,3 @@ namespace API.Extensions
             return age;
         }
     }
-}

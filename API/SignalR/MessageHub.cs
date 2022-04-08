@@ -1,17 +1,6 @@
-﻿using API.DTOs;
-using API.Entities;
-using API.Extensions;
-using API.Interfaces;
-using AutoMapper;
-using Microsoft.AspNetCore.SignalR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.SignalR
-{
-    public class MessageHub : Hub
+﻿
+namespace API.SignalR;
+public class MessageHub : Hub
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -130,4 +119,3 @@ namespace API.SignalR
             return stringCompare ? $"{ caller }-{other}" : $"{ other }-{caller}";
         }
     }
-}

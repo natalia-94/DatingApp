@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Helpers
-{
-    public class PaginationHeader
+﻿namespace API.Helpers;
+public class PaginationHeader
     {
         public PaginationHeader(int currentPage, int itemsPerPage, int totalItems, int totalPages)
         {
@@ -20,4 +14,3 @@ namespace API.Helpers
         public int TotalItems { get; set; }
         public int TotalPages { get; set; }
     }
-}

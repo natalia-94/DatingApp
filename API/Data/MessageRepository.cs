@@ -1,18 +1,6 @@
-﻿using API.DTOs;
-using API.Entities;
-using API.Helpers;
-using API.Interfaces;
-using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Data
-{
-    public class MessageRepository : IMessageRepository
+﻿
+namespace API.Data;
+public class MessageRepository : IMessageRepository
     {
         private readonly DataContext _context;
         private readonly IMapper _mapper;
@@ -115,4 +103,3 @@ namespace API.Data
         }
 
     }
-}

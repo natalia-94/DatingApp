@@ -1,13 +1,5 @@
-﻿using API.DTOs;
-using API.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Interfaces
-{
-    public interface IPhotoRepository
+﻿namespace API.Interfaces;
+public interface IPhotoRepository
     {
         /*
          *  1. GetUnapprovedPhotos
@@ -19,4 +11,3 @@ namespace API.Interfaces
         Task<Photo> GetPhotoById(int id);
         void RemovePhoto(Photo photo);
     }
-}

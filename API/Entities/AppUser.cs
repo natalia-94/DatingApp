@@ -1,12 +1,4 @@
-﻿using API.Extensions;
-using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Entities
-{
+﻿namespace API.Entities;
     public class AppUser : IdentityUser<int>
     {
         public DateTime DateOfBirth { get; set; }
@@ -39,4 +31,3 @@ namespace API.Entities
 
         public ICollection<AppUserRole> UserRoles { get; set; }
     }
-}

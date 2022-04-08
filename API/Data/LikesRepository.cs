@@ -1,17 +1,5 @@
-﻿using API.DTOs;
-using API.Entities;
-using API.Extensions;
-using API.Helpers;
-using API.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Data
-{
-    public class LikesRepository : ILikesRepository
+﻿namespace API.Data;
+public class LikesRepository : ILikesRepository
     {
         private readonly DataContext _context;
 
@@ -67,4 +55,3 @@ namespace API.Data
                 .FirstOrDefaultAsync(x => x.Id == userId);
         }
     }
-}

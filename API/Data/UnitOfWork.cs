@@ -1,13 +1,5 @@
-﻿using API.Interfaces;
-using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Data
-{
-    public class UnitOfWork : IUnitOfWork
+﻿namespace API.Data;
+public class UnitOfWork : IUnitOfWork
     {
         private readonly DataContext _context;
         private readonly IMapper _mapper;
@@ -36,4 +28,4 @@ namespace API.Data
             return _context.ChangeTracker.HasChanges();
         }
     }
-}
+

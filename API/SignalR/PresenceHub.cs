@@ -1,14 +1,5 @@
-﻿using API.Extensions;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.SignalR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.SignalR
-{
-    [Authorize]
+﻿namespace API.SignalR;
+[Authorize]
     public class PresenceHub : Hub
     {
         private readonly PresenceTracker _tracker;
@@ -43,4 +34,3 @@ namespace API.SignalR
         }
     }
 
-}

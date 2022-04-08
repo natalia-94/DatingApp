@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.DTOs
-{
-    public class MemberUpdateDto
+﻿namespace API.DTOs;
+public class MemberUpdateDto
     {
         public string Introduction { get; set; }
 
@@ -17,4 +11,3 @@ namespace API.DTOs
 
         public string Country { get; set; }
     }
-}

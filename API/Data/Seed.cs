@@ -1,17 +1,7 @@
-﻿using API.Entities;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿
 
-namespace API.Data
-{
-    public static class Seed
+namespace API.Data;
+public static class Seed
     {
         public static async Task SeedUsers(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
         {
@@ -50,4 +40,3 @@ namespace API.Data
             await userManager.AddToRolesAsync(admin, new[] { "Admin", "Moderator" });
         }
     }
-}

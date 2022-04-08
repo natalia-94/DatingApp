@@ -1,16 +1,5 @@
-﻿
-using API.DTOs;
-using API.Entities;
-using API.Extensions;
-using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Helpers
-{
-    public class AutoMapperProfiles : Profile
+﻿namespace API.Helpers;
+public class AutoMapperProfiles : Profile
     {
         public AutoMapperProfiles()
         {
@@ -31,4 +20,3 @@ namespace API.Helpers
             //CreateMap<DateTime, DateTime>().ConvertUsing(d => DateTime.SpecifyKind(d, DateTimeKind.Utc));
         }
     }
-}

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Entities
-{
-    public class Message
+﻿namespace API.Entities;
+public class Message
     {
         public int Id { get; set; }
         public int SenderId { get; set; }
@@ -20,4 +14,3 @@ namespace API.Entities
         public bool SenderDeleted { get; set; }
         public bool RecipientDeleted { get; set; }
     }
-}

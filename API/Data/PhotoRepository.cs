@@ -1,16 +1,5 @@
-﻿using API.DTOs;
-using API.Entities;
-using API.Interfaces;
-using AutoMapper.QueryableExtensions;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Data
-{
-    public class PhotoRepository : IPhotoRepository
+﻿namespace API.Data;
+public class PhotoRepository : IPhotoRepository
     {
         private readonly DataContext _context;
 
@@ -45,4 +34,3 @@ namespace API.Data
             _context.Photos.Remove(photo);
         }
     }
-}
